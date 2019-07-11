@@ -1,101 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-                                             android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout
+        android:id="@+id/main_container_constraint_layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <android.support.constraint.ConstraintLayout
+            android:id="@+id/superior_toolbar_constraint_layout"
             android:layout_width="wrap_content"
-            android:layout_height="70dp" app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" android:id="@+id/constraintLayout"
-    >
+            app:layout_constraintEnd_toEndOf="parent">
 
         <ImageView
+                android:id="@+id/world_image_view"
                 android:layout_width="50dp"
-                android:layout_height="50dp" app:srcCompat="@drawable/world"
-                android:id="@+id/imageView"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@drawable/world"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/textView" android:layout_marginEnd="20dp"
-                android:layout_marginTop="5dp" android:layout_marginStart="10dp"/>
+                app:layout_constraintEnd_toStartOf="@+id/title_text_view"/>
         <TextView
-                android:text="City Guide"
+                android:id="@+id/title_text_view"
+                android:text="@string/animals"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
-                android:id="@+id/textView"
-                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="20dp"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
-                app:layout_constraintEnd_toStartOf="@+id/imageView2" android:layout_marginEnd="50dp"
-                android:layout_marginStart="20dp"/>
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/world_image_view"
+                app:layout_constraintEnd_toStartOf="@+id/first_logo_image_view"/>
         <ImageView
+                android:id="@+id/first_logo_image_view"
                 android:layout_width="50dp"
-                android:layout_height="50dp" app:srcCompat="@drawable/twitter"
-                android:id="@+id/imageView2" android:layout_marginStart="50dp"
-                app:layout_constraintStart_toEndOf="@+id/textView" app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/imageView3"
-                android:layout_marginEnd="6dp" android:layout_marginTop="5dp"/>
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="6dp"
+                app:srcCompat="@drawable/twitter"
+                app:layout_constraintStart_toEndOf="@+id/title_text_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/second_logo_image_view"/>
         <ImageView
+                android:id="@+id/second_logo_image_view"
                 android:layout_width="50dp"
-                android:layout_height="50dp" app:srcCompat="@drawable/twitter"
-                android:id="@+id/imageView3"
-                app:layout_constraintStart_toEndOf="@+id/imageView2" app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="5dp"
-                android:layout_marginEnd="10dp"/>
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/twitter"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintStart_toEndOf="@+id/first_logo_image_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
     </android.support.constraint.ConstraintLayout>
-    <android.support.v7.widget.GridLayout
-            android:layout_width="395dp"
-            android:layout_height="645dp" android:layout_marginTop="0dp"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="0dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="0dp"
-            app:useDefaultMargins="true">
 
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="0"
-                app:layout_column="0" android:id="@+id/imageView10"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="0"
-                app:layout_column="1" android:id="@+id/imageView11"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="0"
-                app:layout_column="2" android:id="@+id/imageView12"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="1"
-                app:layout_column="0" android:id="@+id/imageView13"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="1"
-                app:layout_column="1" android:id="@+id/imageView14"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="1"
-                app:layout_column="2" android:id="@+id/imageView15"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="2"
-                app:layout_column="0" android:id="@+id/imageView16"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="2"
-                app:layout_column="1" android:id="@+id/imageView17"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="2"
-                app:layout_column="2" android:id="@+id/imageView18"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="3"
-                app:layout_column="0" android:id="@+id/imageView20"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="3"
-                app:layout_column="1" android:id="@+id/imageView21"/>
-        <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" tools:srcCompat="@tools:sample/avatars" app:layout_row="3"
-                app:layout_column="2" android:id="@+id/imageView22"/>
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/sub_container_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toBottomOf="@+id/superior_toolbar_constraint_layout"
+            app:layout_constraintBottom_toTopOf="@+id/main_grid_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.437"
+            app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+                android:id="@+id/animals_hint_textview"
+                android:text="@string/hint_animals_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.GridLayout
+            android:id="@+id/main_grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:useDefaultMargins="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="3dp"
+            app:layout_constraintTop_toBottomOf="@+id/sub_container_constraint_layout">
+
+        <ImageButton
+                android:id="@+id/clown_fish_button"
+                android:onClick="openClownFishActivity"
+                android:background="@drawable/ic_clown_fish"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="0"
+                app:layout_column="0"/>
+        <ImageButton
+                android:id="@+id/bird_image_view"
+                android:onClick="openBirdActivity"
+                android:background="@drawable/ic_bird"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="0"
+                app:layout_column="1"/>
+        <ImageButton
+                android:id="@+id/cat_image_view"
+                android:onClick="openCatActivity"
+                android:background="@drawable/ic_cat"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="0"
+                app:layout_column="2"/>
+        <ImageButton
+                android:id="@+id/chicken_image_view"
+                android:onClick="openChickenActivity"
+                android:background="@drawable/ic_chicken"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="1"
+                app:layout_column="0"/>
+        <ImageButton
+                android:id="@+id/dog_image_view"
+                android:onClick="openDogActivity"
+                android:background="@drawable/ic_dog"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="1"
+                app:layout_column="1"/>
+        <ImageButton
+                android:id="@+id/duckling_image_view"
+                android:onClick="openDucklingActivity"
+                android:background="@drawable/ic_duckling"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="1"
+                app:layout_column="2"/>
+        <ImageButton
+                android:id="@+id/flamingo_image_view"
+                android:onClick="openFlamingoActivity"
+                android:background="@drawable/ic_flamingo"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="2"
+                app:layout_column="0"/>
+        <ImageButton
+                android:id="@+id/jellyfish_image_view"
+                android:onClick="openJellyfishActivity"
+                android:background="@drawable/ic_jellyfish"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="2"
+                app:layout_column="1"/>
+        <ImageButton
+                android:id="@+id/owl_image_view"
+                android:onClick="openOwlActivity"
+                android:background="@drawable/ic_owl"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="2"
+                app:layout_column="2"/>
+        <ImageButton
+                android:id="@+id/bird2_image_view"
+                android:onClick="openBirdActivity"
+                android:background="@drawable/ic_bird"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="3"
+                app:layout_column="0"/>
+        <ImageButton
+                android:id="@+id/chicken2_image_view"
+                android:onClick="openChickenActivity"
+                android:background="@drawable/ic_chicken"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="3"
+                app:layout_column="1"/>
+        <ImageButton
+                android:id="@+id/clown_fish2_image_view"
+                android:onClick="openClownFishActivity"
+                android:background="@drawable/ic_clown_fish"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                app:layout_row="3"
+                app:layout_column="2"/>
     </android.support.v7.widget.GridLayout>
 </android.support.constraint.ConstraintLayout>

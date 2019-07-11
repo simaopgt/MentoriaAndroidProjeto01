@@ -9,6 +9,24 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".OwlActivity">
+        </activity>
+        <activity android:name=".JellyfishActivity">
+        </activity>
+        <activity android:name=".FlamingoActivity">
+        </activity>
+        <activity android:name=".DucklingActivity">
+        </activity>
+        <activity android:name=".DogActivity">
+        </activity>
+        <activity android:name=".ChickenActivity">
+        </activity>
+        <activity android:name=".CatActivity">
+        </activity>
+        <activity android:name=".BirdActivity">
+        </activity>
+        <activity android:name=".ClownFishActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
