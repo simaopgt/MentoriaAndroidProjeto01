@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">MentoriaAndroidProjeto01</string>
+    <string name="animals">Animals!</string>
+    <string name="clown_fish">Clown Fish!!!</string>
+    <string name="bird">Bird!!!</string>
+    <string name="cat">Cat!!!</string>
+    <string name="chicken">Chicken!!!</string>
+    <string name="dog">Dog!!!</string>
+    <string name="duckling">Duckling!!!</string>
+    <string name="flamingo">Flamingo!!!</string>
+    <string name="jellyfish">Jellyfish!!!</string>
+    <string name="owl">Owl!!!</string>
+    <string name="hint_animals_text">Click at the animals to open their screen!</string>
 </resources>
