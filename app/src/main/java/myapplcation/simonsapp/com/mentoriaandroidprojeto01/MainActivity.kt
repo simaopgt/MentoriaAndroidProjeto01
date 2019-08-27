@@ -20,43 +20,5 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun openCatActivity(view: View) {
-        var intent = Intent(this@MainActivity, CatActivity::class.java)
-        startActivity(intent)
-    }
 
-    fun openChickenActivity(view: View) {
-        var intent = Intent(this@MainActivity, ChickenActivity::class.java)
-        startActivity(intent)
-    }
-
-    fun openClownFishActivity(view: View) {
-        var intent = Intent(this@MainActivity, ClownFishActivity::class.java)
-        startActivityForResult(intent, 1)
-    }
-
-    fun openDogActivity(view: View) {
-        var intent = Intent(this@MainActivity, DogActivity::class.java)
-        startActivity(intent)
-    }
-
-    fun openDucklingActivity(view: View) {
-        var intent = Intent(this@MainActivity, DucklingActivity::class.java)
-        startActivity(intent)
-    }
-
-    fun openFlamingoActivity(view: View) {
-        var intent = Intent(this@MainActivity, FlamingoActivity::class.java)
-        startActivity(intent)
-    }
-
-    fun openJellyfishActivity(view: View) {
-        var intent = Intent(this@MainActivity, JellyfishActivity::class.java)
-        startActivity(intent)
-    }
-
-    fun openOwlActivity(view: View) {
-        var intent = Intent(this@MainActivity, OwlActivity::class.java)
-        startActivity(intent)
-    }
 }
