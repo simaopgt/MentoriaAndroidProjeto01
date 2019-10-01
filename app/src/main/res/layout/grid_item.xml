@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-            android:id="@+id/duckling_image_view"
+    <ImageButton
+            android:id="@+id/animal_image_button"
             android:layout_width="125dp"
             android:layout_height="125dp"
-            android:background="@drawable/ic_duckling"
-            android:onClick="openDucklingActivity"
             app:layout_column="2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_row="1" />
+            app:layout_row="1"/>
+    <TextView
+            android:id="@+id/animal_textview"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Nome do Bicho"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="125dp"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/animal_image_button"
+            app:layout_row="1"/>
 
 </android.support.constraint.ConstraintLayout>
